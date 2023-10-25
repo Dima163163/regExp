@@ -21,7 +21,7 @@ const filterStr = (arr) => {
 console.log(filterStr(arrStr));
 
 // Задание №2
-const emailRegexp = /\w{1,}@\w{3,}.\w{2,5}/gi;
+const emailRegexp = /^([a-z0-9_])+@[a-zA-Z]{3,}?\.[a-zA-Z]{2,5}/i;
 
 console.log(emailRegexp.test('info@methed.ru'));
 console.log(emailRegexp.test('max24@mail.com'));
